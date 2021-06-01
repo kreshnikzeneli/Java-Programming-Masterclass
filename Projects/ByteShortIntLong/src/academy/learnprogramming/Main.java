@@ -13,16 +13,39 @@ public class Main {
         System.out.println("Busted MAX value = " + (myMaxIntValue + 1));
         System.out.println("Busted MIN value = " + (myMinIntValue - 1));
 
-        int myMaxIntTest = 2147483647;
+        int myMaxIntTest = 2_147_483_647;
 
+        byte myMinByteValue = Byte.MIN_VALUE;
+        byte myMaxByteValue = Byte.MAX_VALUE;
+        System.out.println("Byte Minimum Value = " + myMinByteValue);
+        System.out.println("Byte Maximum Value = " + myMaxByteValue);
 
+        Short myMinShortValue = Short.MIN_VALUE;
+        Short myMaxShortValue = Short.MAX_VALUE;
+        System.out.println("Short Minimum Value = " + myMinShortValue);
+        System.out.println("Short Maximum Value = " + myMaxShortValue);
 
-//   This a code to test MAX_VALUE of INT data type
+        long myLongValue = 100L;
+        Long myMinLongValue = Long.MIN_VALUE;
+        Long myMaxLongValue = Long.MAX_VALUE;
+        System.out.println("Long Minimum Value = " + myMinLongValue);
+        System.out.println("Long Maximum Value = " + myMaxLongValue);
 
-//        int budgetTotal1 = 1680463568;
-//        int budgetTotal2 = 467020079 ;
-//        int budgetTotal = budgetTotal1 + budgetTotal2 ;
-//        System.out.println("Total Budget is = " + budgetTotal);
+        long bigLongLiteralValue = 2_147_483_647_234L;
+        System.out.println(bigLongLiteralValue);
+
+        short bigShortLiteralValue = 32767;
+        System.out.println(bigShortLiteralValue);
+
+        int myTotal = (myMinIntValue / 2);
+
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        short myNewShortValue = (short) (myMinShortValue / 2);
+
+        System.out.println(myNewByteValue);
+
+        System.out.println(myNewShortValue);
 
     }
 }

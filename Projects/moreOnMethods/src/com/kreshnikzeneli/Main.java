@@ -82,7 +82,7 @@ public class Main {
         } else if (playerScore >= 100) {
             position = 3;
         }
-        
+
         return position;
     }
 

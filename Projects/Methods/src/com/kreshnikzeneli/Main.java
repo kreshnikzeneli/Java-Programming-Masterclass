@@ -3,33 +3,34 @@ package com.kreshnikzeneli;
 public class Main {
 
     public static void main(String[] args) {
-
         boolean gameOver = true;
         int score = 800;
         int levelCompleted = 5;
         int bonus = 100;
 
-        calucateScore(gameOver, score, levelCompleted, bonus);
+        calculateScore();
 
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
 
-        calucateScore(gameOver, score, levelCompleted, bonus);
-
-
+        if (gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("The final score is " + finalScore);
+        }
     }
 
-    public static int calucateScore (boolean gameOver, int score, int levelCompleted, int bonus) {
 
+    public static void calculateScore () {
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
 
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
-            finalScore += 2000;
+            finalScore +=1000;
             System.out.println("Your final score was " + finalScore);
-            return finalScore;
         }
-
-        return -1;
     }
 }

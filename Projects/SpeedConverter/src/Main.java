@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double miles = SpeedConverter.toMilesPerHours(80);
+        long miles = SpeedConverter.toMilesPerHour(10.5);
         System.out.println("Miles = " + miles);
 
-        SpeedConverter.printConversion(80);
+        SpeedConverter.printConversion(10.5);
     }
 }
